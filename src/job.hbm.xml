@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.kd.hibernate.Job_Details" table="job">
+    <id column="ID" name="id" type="int">
+      <generator class="increment"/>
+    </id>
+    <property name="key">
+      <column name="key"/>
+    </property>
+    <property name="workexp">
+      <column name="WorkExp"/>
+    </property>
+    <property name="skillset">
+      <column name="SkillSet"/>
+    </property>
+    <property name="expsalary">
+      <column name="ExpSalary"/>
+    </property>
+    <property name="jobpreference">
+      <column name="JobType"/>
+    </property>
+  </class>
+</hibernate-mapping>
